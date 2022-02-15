@@ -82,6 +82,8 @@ async function updateFilesWithinTestApp(info) {
     },
     testWorkspace
   );
+
+  await packageJson.removeDevDependency('ember-welcome-page');
 }
 
 /**
